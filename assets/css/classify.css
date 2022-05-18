@@ -1,0 +1,87 @@
+body {
+  background-color: #212730;
+  color: #ffffff;
+  font-family: Arial;
+  margin: 0;
+}
+
+#header {
+  margin: 4vw;
+  width: 92vw;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  grid-column-gap: 2vw;
+}
+
+#title {
+  text-align: center;
+  font-size: 5vh;
+  padding: 2.5vw;
+  background-color: #33435c;
+  -webkit-app-region: drag;
+}
+
+#close {
+  font-size: 6vh;
+  padding: 2.1vw;
+  text-align: center;
+  background-color: #bf4949;
+}
+
+#close:hover {
+  cursor: pointer;
+  background-color: #d11b1b;
+}
+
+.class {
+  color: #ffffff;
+  background-color: #33435c;
+  border: .3vw solid #1dcaff;
+  border-radius: 1vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.class:hover {
+  background-color: #08a0e9;
+  border: .3vw solid #212730;
+  user-select: none;
+  cursor: pointer;
+}
+
+i {
+  padding-top: 3px;
+  color: #ffffff;
+  background-color: #394030;
+  border: .3vw solid #77a14a;
+  border-radius: 1vw;
+  text-align: center;
+  font-size: 4vw;
+}
+
+i:hover {
+  background-color: #77a14a;
+  border: .3vw solid #212730;
+  user-select: none;
+  cursor: pointer;
+}
+
+#classify{
+  margin-left: 14.5vw;
+  margin-top: 5vw;
+  display: grid;
+  grid-column-gap: 2vw;
+  grid-template-columns: repeat(6, 10vw);
+}
+
+#container {
+  margin: 5vw 5vw 0 5vw;
+}
+
+.id {
+  display: none;
+}
+
+.classifier {
+  display: none;
+}

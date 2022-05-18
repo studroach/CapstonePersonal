@@ -1,0 +1,18 @@
+Python:
+
+
+client = pymongo.MongoClient("mongodb+srv://CapstoneUsers:WhereTips@ml-tweet-db.bgs0y.mongodb.net/DoorDashTweets?retryWrites=true&w=majority", server_api=ServerApi('1'))
+db = client.test
+
+
+Node.js:
+
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://CapstoneUsers:WhereTips@ml-tweet-db.bgs0y.mongodb.net/DoorDashTweets?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});

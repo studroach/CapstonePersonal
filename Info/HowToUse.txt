@@ -1,0 +1,3 @@
+Install nodeJS and use the terminal or Windows Powershell.
+set cwd to the project folder then use this command:
+>npm start

@@ -1,0 +1,129 @@
+/*general/////////////////////////////////////////////////////////////////////*/
+#loadingTweets {
+  text-align: center;
+  margin-left: 35vw;
+  width: 30vw;
+}
+
+.tweet {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-bottom: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border: .5vw solid #33435c;
+  border-radius: 2vw;
+  background-color: #33435c;
+}
+
+.id {
+  display: none;
+}
+
+.classifier {
+  display: none;
+}
+
+#tweetContainer{
+  margin-right: 3vw;
+  overflow-y: scroll;
+}
+
+#tweetContainer > .tweet:hover {
+  border: .5vw solid #1dcaff;
+  cursor: pointer;
+}
+
+/*review tweets///////////////////////////////////////////////////////////////*/
+#contentRT {
+  padding-top: 16vh;
+}
+
+#classSelector{
+  margin-left: 27vw;
+  width: 46vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main {
+  display: table;
+  height: 14vw;
+  flex-basis: 40%;
+  margin: 1vw;
+  color: #ffffff;
+  background-color: #33435c;
+  border: .5vw solid #1dcaff;
+  border-radius: 2vw;
+  text-align: center;
+}
+
+.main:hover {
+  background-color: #08a0e9;
+  border: .5vw solid #0084b4;
+  user-select: none;
+  cursor: pointer;
+}
+
+.main > p {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+  font-size: 2vw;
+  vertical-align: middle;
+}
+
+/*manage data/////////////////////////////////////////////////////////////////*/
+#contentMD {
+  padding-top: 14vh;
+  display: none;
+}
+
+#serverBtn {
+  color: #ffffff;
+  padding: 3vw;
+  width: 20vw;
+  margin-left: 36.2vw;
+  background-color: #33435c;
+  border: .5vw solid #1dcaff;
+  border-radius: 2vw;
+  text-align: center;
+}
+
+#serverBtn:hover {
+  background-color: #08a0e9;
+  border: .5vw solid #0084b4;
+  user-select: none;
+  cursor: pointer;
+}
+
+/*manual classify tweets//////////////////////////////////////////////////////*/
+#contentMCT {
+  padding-top: 14vh;
+  display: none;
+}
+
+#filterBtns {
+  display: grid;
+  grid-template-columns: repeat(6, 8vw);
+  grid-column-gap: 2vw;
+  margin-left: 20vw;
+  margin-bottom: 3vw;
+}
+
+.filterBtn {
+  color: #ffffff;
+  background-color: #33435c;
+  border: .2vw solid #1dcaff;
+  border-radius: 1vw;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.filterBtn:hover {
+  background-color: #08a0e9;
+  border: .2vw solid #0084b4;
+  user-select: none;
+  cursor: pointer;
+}

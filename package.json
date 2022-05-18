@@ -1,0 +1,16 @@
+{
+  "name": "mlproject",
+  "version": "1.0.0",
+  "description": "ML Dashboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jake Castedo",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^15.1.2",
+    "mongodb": "^4.1.4",
+    "electron-fetch": "^1.7.4"
+  }
+}

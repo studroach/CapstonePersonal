@@ -1,0 +1,62 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Doordash CXM</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="index.js"></script>
+    <script src="reviewTweets.js"></script>
+  </head>
+  <body id="body">
+
+      <!--Company Title Box-->
+      <h1 id="CompanyTitle">DOORDASH</h1>
+
+      <!--Navigation Menu-->
+      <i id="barsIcon" class="material-icons-outlined">menu</i>
+      <i id="back_arrow" class="material-icons-outlined">arrow_back</i>
+
+      <div id="card">
+        <h2 class="menuItem" id="rt">Review Tweets</h2>
+        <h2 class="menuItem" id="mct">Manually Classify Tweets</h2>
+        <h2 class="menuItem" id="md">Review Stats</h2>
+      </div>
+
+      <!--Main Content-->
+      <div id="contentRT">
+        <div id="classSelector">
+            <div id="recomend" class="main"><p>Recomendations</p></div>
+            <div id="support" class="main"><p>Support</p></div>
+            <div id="cComplaints" class="main"><p>Customer<br>Complaints</p></div>
+            <div id="dComplaints" class="main"><p>Driver<br>Complaints</p></div>
+            <div id="noise" class="main"><p>Noise</p></div>
+        </div>
+      </div>
+
+      <div id="contentMCT">
+        <div id="filterBtns">
+          <div id="classNone" class="filterBtn">None</div>
+          <div id="class0" class="filterBtn">Rec.</div>
+          <div id="class1" class="filterBtn">Supp.</div>
+          <div id="class2" class="filterBtn">Cust.</div>
+          <div id="class3" class="filterBtn">Driv.</div>
+          <div id="class4" class="filterBtn">Noise</div>
+        </div>
+      </div>
+
+      <div id="contentMD">
+        <div id="serverBtn">Server</div>
+      </div>
+
+      <div id="tweetContainer"></div>
+      <!---->
+  </body>
+</html>
